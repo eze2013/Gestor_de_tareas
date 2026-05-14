@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas | Diseños Arcoiris</title>
+    <link rel="icon" href="./imagenes/icono-DA.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img id="imagen_logo" src="./imagenes/logo-DA.jpg" alt="">
+    <main class="contenedor">
+        <header>
+            <h1><strong>GESTOR DE TAREAS</strong></h1>
+            <p><span class="color1">DI</span><span class="color2">SE</span><span class="color3">ÑOS  </span><span class="color4">AR</span><span class="color5">CO</span><span class="color6">IRIS</span></p>
+        </header>
+
+        <section id="seccion-entrada">
+            <div class="tarjeta-formulario">
+                <h2>Agrega una tarea:</h2>
+                <div class="campo">
+                    <label for="titulo"><strong>Título Tarea:</strong></label>
+                    <input type="text" id="titulo" placeholder="Ej: tarea nueva" required>
+                </div>
+                <div class="campo">
+                    <label for="descripcion"><strong>Descripción:</strong></label>
+                    <textarea id="descripcion" rows="2" cols="35" placeholder="Detalles de la tarea..."></textarea>
+                </div>
+                <button id="btn-agregar">AGREGAR TAREA</button>
+            </div>
+        </section>
+
+        <section id="seccion-lista">
+            <div class="encabezado-lista">
+                <h2>Lista de Pendientes</h2>
+                <span id="contador-tareas">0 tareas</span>
+            </div>
+            
+            <div id="contenedor-tareas">
+                <div class="tarea-ejemplo">
+                    Cargando tareas...
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

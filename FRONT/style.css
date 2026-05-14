@@ -1,0 +1,118 @@
+body{
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#imagen_logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220vh;
+    height: 100vh;
+    z-index: -1; /* Lo pone detrás de todo el contenido */
+    object-fit: cover;
+    opacity: 0.50;
+    animation: movimientoFondo 20s ease-in-out infinite; /*aplicar animacion*/
+}
+
+@keyframes movimientoFondo {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    25% {
+        transform: scale(1.05) translate(2%, -1%);
+    }
+    50% {
+        transform: scale(1.1) translate(-2%, 2%);
+    }
+    75% {
+        transform: scale(1.05) translate(1%, 1%);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+h1{
+    font-size: 70px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: darkblue;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.color1{
+    color: red;
+}
+.color2{
+    color: blue;
+}
+.color3{
+    color:pink;
+}
+.color4{
+    color: blueviolet;
+}
+.color5{
+    color: darkorange;
+}
+.color6{
+    color: gold;
+}
+header{
+    font-size: 45px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: darkblue;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.campo{
+    color:darkblue;
+    font-size: 25px;
+    font-style: italic;
+}
+
+input{
+    background-color:lightblue;
+    font-size: 20px;
+    border: 1px solid #000000;
+    font-style: italic;
+    border-radius: 3px;
+}
+
+textarea{
+    font-size: 16px;
+    background-color: #ffffea;
+    margin-top: 10px;
+    border: 1px solid #000001;
+    width: 410px;
+    color: darkred;
+    font-style: italic;
+    border-radius: 3px;
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    background-color: darkgreen;
+    color: white;
+    border: 2px dashed black;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aquamarine;
+    color: #000000;
+}
