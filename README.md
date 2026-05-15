@@ -69,6 +69,7 @@ GitHub
 
 
 ⚙️ Instalación y ejecución
+
 1️⃣ Clonar el repositorio
 git clone https://github.com/eze2013/Gestor_de_tareas.git
 
